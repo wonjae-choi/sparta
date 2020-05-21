@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <style type="text/css">
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .wrap {
+            width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+        .myorder {
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다');
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="jumbotron">
+            <img src="https://www.sambamall.com/cdn/product/20180306/GP20180306031448923_org.jpg" />
+            <div class="myorder">
+                <hr>
+                <h1 >캡틴아메리카 킥보드</h1>
+                <h4 >가격 : 59,000원</h4>                
+                <h5 >알루미늄 프레임에 LED발광바퀴가 적용되어있고, 
+                    3.3kg의 가벼운 무게에 접이식 형태로 휴대 및 보관이 쉽습니다.
+                    마블정품 라이센스이며, 어린이용품 대상 KC인증을 완료하였습니다.</h3>
+                <hr>
+                <p>주문자 이름 : <input type="text" /></p>
+                <p>수 량 : <input type="text" /></p>
+                <p>주 소 : <input type="text" /></p>
+                <p>전화번호 : <input type="text" /></p>
+            </div>
+            <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+        </div>
+    </div>
+</body>
+
+</html>

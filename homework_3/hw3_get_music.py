@@ -12,6 +12,7 @@ soup = BeautifulSoup(data.text, 'html.parser')
 musics = soup.select('#body-content > div.newest-list > div > table > tbody > tr')
 
 # music (tr들) 의 반복문을 돌리기
+count = 1
 for music in musics:
     number = music.select_one('td.number')
     rank = number.text.strip()
@@ -23,7 +24,12 @@ for music in musics:
     artist = a_artist.text.strip()
 #    print (artist)
 
-    print (rank[0:2], title, '-', artist)
+    if count >= 10 :
+        print (rank[0:2], title, '-', artist)
+    else :
+        print (rank[0:1], title, '-', artist)
+    
+    count +=1
 
 #body-content > div.newest-list > div > table > tbody > tr:nth-child(1) > td.number
 #body-content > div.newest-list > div > table > tbody > tr:nth-child(1) > td.info > a.title.ellipsis
